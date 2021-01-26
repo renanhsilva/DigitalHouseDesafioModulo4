@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_name"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Name" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_email"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:hint="Email"
+            app:layout_constraintTop_toTopOf="@+id/txt_name"
+            app:startIconContentDescription="Email" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_password"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="44dp"
+            android:hint="Password"
+            app:layout_constraintTop_toTopOf="@+id/txt_email"
+            app:startIconContentDescription="Password" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_passwordRepeat"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:hint="Password Repeat"
+            app:layout_constraintTop_toTopOf="@+id/txt_password"
+            app:startIconContentDescription="Password Repeat" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="289dp"
+            android:layout_height="53dp"
+            android:text="Create Account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.827" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
