@@ -17,7 +17,8 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="1.0"
-      tools:listitem="@layout/item_games" />
+      tools:listitem="@layout/item_games"
+      />
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton
       android:id="@+id/bt_addGame"
@@ -29,6 +30,7 @@
       app:layout_constraintHorizontal_bias="0.954"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.961" />
+      app:layout_constraintVertical_bias="0.961"
+      android:backgroundTint="@color/pink"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

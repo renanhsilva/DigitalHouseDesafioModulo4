@@ -15,7 +15,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_name"
-            tools:layout_editor_absoluteX="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -25,7 +24,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_email"
-            tools:layout_editor_absoluteX="0dp"
             android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
@@ -36,7 +34,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_password"
-            tools:layout_editor_absoluteX="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
@@ -47,7 +44,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_passwordRepeat"
-            tools:layout_editor_absoluteX="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
@@ -57,9 +53,11 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="289dp"
-            android:layout_height="53dp"
+            android:layout_width="355dp"
+            android:layout_height="51dp"
+            android:backgroundTint="@color/pink"
             android:text="Create Account"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.6"
