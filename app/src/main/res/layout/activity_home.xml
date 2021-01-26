@@ -9,7 +9,7 @@
     android:background="@color/black">
 
   <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/rc_gamesHome"
+      android:id="@+id/rv_games"
       android:layout_width="match_parent"
       android:layout_height="678dp"
       app:layout_constraintBottom_toBottomOf="parent"
