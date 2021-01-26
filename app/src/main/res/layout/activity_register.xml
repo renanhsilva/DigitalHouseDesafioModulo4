@@ -7,56 +7,54 @@
     tools:context=".Login">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="320dp"
-        android:layout_height="326dp"
+        android:layout_width="329dp"
+        android:layout_height="383dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/txt_password"
-            android:layout_width="283dp"
-            android:layout_height="31dp"
-            android:text="Password"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.415" />
-
-        <TextView
-            android:id="@+id/txt_passwordAgain"
-            android:layout_width="283dp"
-            android:layout_height="31dp"
-            android:text="Password Repeat"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.538" />
-
-        <TextView
-            android:id="@+id/txt_email"
-            android:layout_width="283dp"
-            android:layout_height="31dp"
-            android:text="Email"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.257" />
-
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_name"
-            android:layout_width="283dp"
-            android:layout_height="31dp"
-            android:text="Nome"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Name"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.122" />
+            app:startIconContentDescription="Name"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="45dp"
+            android:hint="Email"
+            app:layout_constraintTop_toTopOf="@+id/txt_name"
+            app:startIconContentDescription="Email"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+
+            android:hint="Password"
+            app:layout_constraintTop_toTopOf="@+id/txt_email"
+            app:startIconContentDescription="Password"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_passwordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:hint="Password Repeat"
+            app:layout_constraintTop_toTopOf="@+id/txt_password"
+            app:startIconContentDescription="Password Repeat"
+            tools:layout_editor_absoluteX="0dp" />
 
         <Button
             android:id="@+id/button"
@@ -64,9 +62,11 @@
             android:layout_height="53dp"
             android:text="Create Account"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.941"
-            tools:layout_editor_absoluteX="16dp" />
+            app:layout_constraintVertical_bias="0.827" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
