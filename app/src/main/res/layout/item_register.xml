@@ -5,29 +5,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="5dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:hint="Name"
-            app:layout_constraintTop_toTopOf="parent"
-            app:startIconContentDescription="Name" />
+             />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txt_email"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:hint="Email"
             app:layout_constraintTop_toTopOf="@+id/txt_name"
             app:startIconContentDescription="Email" />
@@ -36,8 +35,9 @@
             android:id="@+id/txt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:hint="Password"
             app:layout_constraintTop_toTopOf="@+id/txt_email"
             app:startIconContentDescription="Password" />
@@ -46,25 +46,25 @@
             android:id="@+id/txt_passwordRepeat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:hint="Password Repeat"
             app:layout_constraintTop_toTopOf="@+id/txt_password"
-            app:startIconContentDescription="Password Repeat" />
+            app:startIconContentDescription="Password Repeat"/>
 
         <Button
             android:id="@+id/button"
-            android:layout_width="355dp"
-            android:layout_height="51dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:backgroundTint="@color/pink"
             android:text="Create Account"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.6"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.827" />
+            />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>

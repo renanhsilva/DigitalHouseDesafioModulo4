@@ -10,12 +10,12 @@
     <include
         android:id="@+id/in_login"
         layout="@layout/item_login"
-        android:layout_width="340dp"
-        android:layout_height="356dp"
+        android:layout_width="341dp"
+        android:layout_height="308dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.498" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
