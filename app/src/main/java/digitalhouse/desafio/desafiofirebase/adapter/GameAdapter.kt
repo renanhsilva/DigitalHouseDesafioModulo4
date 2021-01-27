@@ -11,14 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import digitalhouse.desafio.desafiofirebase.R
 import digitalhouse.desafio.desafiofirebase.model.Game
+import kotlinx.android.synthetic.main.item_games.view.*
 
 class GameAdapter : RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
 
-    inner class GameViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView){
-        var img_game : ImageView = itemView.findViewById(R.id.img_game)
-        var txt_titleGame : TextView = itemView.findViewById(R.id.txt_titleGame)
-        var txt_yearGame : TextView = itemView.findViewById(R.id.txt_yearGame)
-    }
+    inner class GameViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView)
 
     private val differCallback = object : DiffUtil.ItemCallback<Game>(){
         override fun areItemsTheSame(oldItem: Game, newItem: Game): Boolean {
@@ -42,9 +39,9 @@ class GameAdapter : RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
     override fun onBindViewHolder(holder: GameViewHolder, position: Int) {
         val games = differ.currentList[position]
         holder.itemView.apply {
-            Glide.with(this).load(games.url).into(holder.img_game)
-            holder.txt_titleGame.text = games.name
-            holder.txt_yearGame.text = games.year
+            Glide.with(this).load(games.url).into(img_game)
+            txt_titleGame.text = games.name
+            txt_yearGame.text = games.year
         }
     }
 
