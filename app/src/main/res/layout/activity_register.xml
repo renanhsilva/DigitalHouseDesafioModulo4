@@ -8,7 +8,7 @@
     android:background="@drawable/kratos_god_of_war">
 
     <include
-        android:id="@+id/in_login"
+        android:id="@+id/in_register"
         layout="@layout/item_register"
         android:layout_width="369dp"
         android:layout_height="335dp"

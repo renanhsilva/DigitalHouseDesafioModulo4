@@ -23,10 +23,15 @@ class GameAdapter(val listGame: ArrayList<Game>, val context: Context): Recycler
             val currentItem = listGame[position]
             holder.name.text = currentItem.name
             holder.year.text = currentItem.year
-//            Picasso.get().load(currentItem.url)
-//                    .placeholder(R.drawable.kratos_god_of_war)
-//                    .into(holder.url)
+//
+
+            if (currentItem.url.isNullOrEmpty()){
+                holder.img.setImageResource(R.drawable.semfoto)
+            } else {
+                Picasso.get().load(currentItem.url).into(holder.img)
+            }
         }
+
 
         override fun getItemCount(): Int {
             return listGame.size
@@ -35,7 +40,7 @@ class GameAdapter(val listGame: ArrayList<Game>, val context: Context): Recycler
         inner class GameViewHolder (itemView: View): RecyclerView.ViewHolder(itemView) {
             var name: TextView = itemView.findViewById(R.id.txt_titleGame)
             var year: TextView = itemView.findViewById(R.id.txt_yearGame)
-            var url: ImageView = itemView.findViewById(R.id.img_game)
+            var img: ImageView = itemView.findViewById(R.id.img_game)
 
         }
 

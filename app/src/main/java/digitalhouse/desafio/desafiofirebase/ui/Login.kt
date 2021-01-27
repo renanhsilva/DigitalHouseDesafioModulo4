@@ -50,10 +50,7 @@ class Login : AppCompatActivity() {
             val senha = binding.inLogin.txtPassword.text.toString()
 
             if (!email.trim().equals("") && !senha.trim().equals("")) {
-
                 auth(email, senha)
-                Log.i("TAG", "senha $senha")
-                Log.i("TAG", "email $email")
             } else {
                 Toast.makeText(this, "Preencha corretamente os dados", Toast.LENGTH_SHORT).show()
             }
