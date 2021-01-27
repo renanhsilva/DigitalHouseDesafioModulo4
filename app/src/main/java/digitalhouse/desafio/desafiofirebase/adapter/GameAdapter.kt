@@ -27,11 +27,8 @@ import kotlinx.android.synthetic.main.item_games.view.*
             val currentItem = listGame[position]
             holder.name.text = currentItem.name
             holder.year.text = currentItem.year
-
             Picasso.get().load(currentItem.url)
                     .into(holder.url)
-
-
         }
 
         override fun getItemCount(): Int {
@@ -42,6 +39,5 @@ import kotlinx.android.synthetic.main.item_games.view.*
             var name: TextView = itemView.findViewById(R.id.txt_titleGame)
             var year: TextView = itemView.findViewById(R.id.txt_yearGame)
             var url: ImageView = itemView.findViewById(R.id.img_game)
-
         }
 }
