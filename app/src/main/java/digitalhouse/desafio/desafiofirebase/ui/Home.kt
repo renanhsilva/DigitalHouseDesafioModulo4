@@ -1,8 +1,11 @@
 package digitalhouse.desafio.desafiofirebase.ui
 
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -34,6 +37,7 @@ class Home : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         recyclerViewConfig()
+        binding.btAddGame.setOnClickListener(openActivity(RegisterGame::class.java))
 
     }
 
@@ -48,8 +52,12 @@ class Home : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+    }
 
-
+    fun openActivity(activity: Class<out Activity>): View.OnClickListener? {
+        return View.OnClickListener {
+            startActivity(Intent(this, activity))
+        }
     }
 
 }

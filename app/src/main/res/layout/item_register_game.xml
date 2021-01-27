@@ -20,7 +20,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_name_register_game"
@@ -28,13 +31,15 @@
                 android:layout_height="wrap_content"
                 android:hint="Name"
                 android:textColorHint="@color/hintgreen"
-                android:textColor="@color/hintgreen"
-                android:background="@color/white"/>
+                android:textColor="@color/hintgreen" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_year_register_game"
@@ -42,13 +47,15 @@
                 android:layout_height="wrap_content"
                 android:hint="Create At"
                 android:textColorHint="@color/hintgreen"
-                android:textColor="@color/hintgreen"
-                android:background="@color/white"/>
+                android:textColor="@color/hintgreen" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_desc_register_game"
@@ -57,19 +64,17 @@
                 android:hint="Description"
                 android:textColorHint="@color/hintgreen"
                 android:inputType="textPassword"
-                android:textColor="@color/hintgreen"
-                android:background="@color/white"/>
+                android:textColor="@color/hintgreen" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/bt_create_register_game"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save Game"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/pink"/>
+            android:layout_marginTop="50dp"
 
+            android:backgroundTint="@color/pink"
+            android:text="Save Game" />
 
 
     </LinearLayout>

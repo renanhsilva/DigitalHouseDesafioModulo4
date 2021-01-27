@@ -21,7 +21,9 @@
 
         <include
             android:id="@+id/in_register_gamer"
-            layout="@layout/item_register_game"/>
+            layout="@layout/item_register_game"
+            android:layout_width="match_parent"
+            android:layout_height="343dp" />
 
     </LinearLayout>
 

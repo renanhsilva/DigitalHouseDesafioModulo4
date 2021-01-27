@@ -7,6 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".ui.Home">
 
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Search Game"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.01"
+      tools:layout_editor_absoluteX="-16dp"
+      app:startIconDrawable="@drawable/ic_baseline_camera_alt_24">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/rv_games"
       android:layout_width="match_parent"
@@ -32,5 +50,7 @@
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.961"
       android:backgroundTint="@color/pink"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
