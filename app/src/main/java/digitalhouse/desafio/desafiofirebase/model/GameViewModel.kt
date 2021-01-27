@@ -1,24 +1,31 @@
 package digitalhouse.desafio.desafiofirebase.model
 
+import android.app.Application
 import android.util.Log
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
+import digitalhouse.desafio.desafiofirebase.entities.Game
 import digitalhouse.desafio.desafiofirebase.service.cr
 
-class GameViewModel {
+class GameViewModel() : ViewModel() {
 
-    var gameList = MutableLiveData<ArrayList<Game>>()
+    var gamelist = MutableLiveData<ArrayList<Game>>()
 
-    fun getListaJogos() {
-        var listaAux = ArrayList<Game>()
+    fun getData() {
+        var listaextrac = ArrayList<Game>()
         cr.get()
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     for (document in task.result!!) {
-                        listaAux.add(Game(document.data["name"].toString(), document.data["year"].toString(), document.data["desc"].toString(), document.data["url"].toString()))
+                        listaextrac.add(Game(document.data["name"].toString(), document.data["year"].toString(), document.data["desc"].toString(), document.data["url"].toString()))
                     }
-                    gameList.value = listaAux
+                    gamelist.value = listaextrac
+                    Log.i("TAG","RESPONSE FIREBASE " + gamelist.value.toString())
                 } else {
-                    Log.w("HomeViewModel", "Exceção ", task.exception)
+                    Log.e("TAG", "ERROR", task.exception)
                 }
             }
     }

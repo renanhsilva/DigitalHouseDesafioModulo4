@@ -1,4 +1,4 @@
-package digitalhouse.desafio.desafiofirebase.model
+package digitalhouse.desafio.desafiofirebase.entities
 
 import digitalhouse.desafio.desafiofirebase.R
 
