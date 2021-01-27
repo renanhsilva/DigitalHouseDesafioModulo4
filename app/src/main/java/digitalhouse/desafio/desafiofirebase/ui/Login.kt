@@ -46,8 +46,8 @@ class Login : AppCompatActivity() {
 
     fun login(): View.OnClickListener? {
         return View.OnClickListener {
-            val email = binding.inLogin.txtEmail.toString()
-            val senha = binding.inLogin.txtPassword.toString()
+            val email = binding.inLogin.txtEmail.text.toString()
+            val senha = binding.inLogin.txtPassword.text.toString()
 
             if (!email.trim().equals("") && !senha.trim().equals("")) {
 
@@ -68,11 +68,11 @@ class Login : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(this, "Login com Sucesso", Toast.LENGTH_SHORT).show()
                     openActivity(Home::class.java)
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Toast.makeText(this, "Login com falha", Toast.LENGTH_SHORT).show()
                     var intent = Intent(application, Home::class.java)
                     startActivity(intent)
+                } else {
+                    // If sign in fails, display a message to the user.
+                    Toast.makeText(this, "Autenticação Invalida", Toast.LENGTH_SHORT).show()
                 }
             }
     }
