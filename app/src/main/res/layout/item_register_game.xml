@@ -60,11 +60,11 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_desc_register_game"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="133dp"
                 android:hint="Description"
-                android:textColorHint="@color/hintgreen"
                 android:inputType="textPassword"
-                android:textColor="@color/hintgreen" />
+                android:textColor="@color/hintgreen"
+                android:textColorHint="@color/hintgreen" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -72,8 +72,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-
             android:backgroundTint="@color/pink"
+            android:textColor="@color/white"
             android:text="Save Game" />
 
 
