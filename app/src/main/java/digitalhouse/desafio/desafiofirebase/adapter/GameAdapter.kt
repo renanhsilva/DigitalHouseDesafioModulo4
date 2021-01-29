@@ -1,6 +1,7 @@
 package digitalhouse.desafio.desafiofirebase.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import digitalhouse.desafio.desafiofirebase.R
 import digitalhouse.desafio.desafiofirebase.entities.Game
+import digitalhouse.desafio.desafiofirebase.ui.GameDetail
 import digitalhouse.desafio.desafiofirebase.ui.Home
 
 class GameAdapter(val listGame: ArrayList<Game>, val context: Context): RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
@@ -30,6 +32,18 @@ class GameAdapter(val listGame: ArrayList<Game>, val context: Context): Recycler
             } else {
                 Picasso.get().load(currentItem.url).into(holder.img)
             }
+
+            holder.img.setOnClickListener {
+                context.startActivity(
+                    Intent(it.context, GameDetail::class.java)
+                        .putExtra("game", currentItem.name)
+                        .putExtra("year", currentItem.year)
+                        .putExtra("desc", currentItem.desc)
+                        .putExtra("url", currentItem.url)
+                )
+            }
+
+
         }
 
 

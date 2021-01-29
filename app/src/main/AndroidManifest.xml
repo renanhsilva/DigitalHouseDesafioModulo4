@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioFireBase">
-        <activity android:name=".ui.RegisterGame"></activity>
-        <activity android:name=".ui.Home"></activity>
+        <activity android:name=".ui.GameDetail"></activity>
+        <activity android:name=".ui.RegisterGame" />
+        <activity android:name=".ui.Home" />
         <activity android:name=".ui.Register" />
         <activity android:name=".ui.Login">
             <intent-filter>
