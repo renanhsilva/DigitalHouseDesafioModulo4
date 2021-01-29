@@ -42,8 +42,6 @@ class GameAdapter(val listGame: ArrayList<Game>, val context: Context): Recycler
                         .putExtra("url", currentItem.url)
                 )
             }
-
-
         }
 
 
