@@ -19,7 +19,7 @@ class GameDetail : AppCompatActivity() {
         val desc = intent.getSerializableExtra("desc")
         val url = intent.getSerializableExtra("url")
 
-        binding.txtNameGameDetail.text = game.toString()
+        binding.txtNameGameDetail1.text = game.toString()
         binding.inGameDetail.txtNameGameDetail.text = game.toString()
         binding.inGameDetail.txtYearGameDetail.text = year.toString()
         binding.inGameDetail.txtDescGameDetail.text = desc.toString()

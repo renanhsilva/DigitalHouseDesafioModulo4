@@ -60,9 +60,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txt_desc_register_game"
                 android:layout_width="match_parent"
-                android:layout_height="133dp"
+                android:layout_height="158dp"
+                android:layout_gravity=""
                 android:hint="Description"
-                android:inputType="textPassword"
                 android:textColor="@color/hintgreen"
                 android:textColorHint="@color/hintgreen" />
         </com.google.android.material.textfield.TextInputLayout>
